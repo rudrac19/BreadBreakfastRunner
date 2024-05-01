@@ -4,7 +4,7 @@
 
 # 1.0 (2024)
 
-cOMING JUNE 30!
+COMING JUNE 30!
 
 # Open Source
 
