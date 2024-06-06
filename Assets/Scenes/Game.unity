@@ -462,6 +462,8 @@ MonoBehaviour:
   forkPrefab: {fileID: 6701889144099334031, guid: bed28496c7d59cc46a19ef241523caf6, type: 3}
   spoonPrefab: {fileID: 4802978137814723480, guid: 087d0fa05f2cfdc4f92dd87c9ce7c44d, type: 3}
   handPrefab: {fileID: 3278746393631255364, guid: b8908ec76c890dc48b7887c86b8ec8ba, type: 3}
+  movingPlatform: {fileID: 1152998387}
+  movePlatform: {fileID: 1152998386}
 --- !u!1 &1244383168
 GameObject:
   m_ObjectHideFlags: 0
