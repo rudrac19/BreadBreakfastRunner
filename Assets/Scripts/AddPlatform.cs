@@ -16,13 +16,7 @@ public class AddPlatform : MonoBehaviour
 
     public MovePlatform movePlatform;
 
-    public float rate;
-
     int offset = 0;
-    int theSecondTime = 0;
-
-
-
 
     void Awake()
     {
@@ -55,16 +49,11 @@ public class AddPlatform : MonoBehaviour
         StartCoroutine(SpawnAndCooldown());
     }
 
-    void Update()
-    {
-        rate = (movePlatform.speed + 10f) / 2; 
-    }
-
     IEnumerator SpawnAndCooldown()
     {
         while (true)
         {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(.75f);
             int randomPlatform = Random.Range(0, 3);
             switch (randomPlatform)
             {
@@ -86,19 +75,14 @@ public class AddPlatform : MonoBehaviour
                 default:
                     break;
             }
-            theSecondTime++;
 
-            if (theSecondTime != 1)
-            {
-                int indexToDestroy = theSecondTime - 2;
-
-                if (indexToDestroy >= 0 && indexToDestroy < platforms.Count)
-                {
-                    Destroy(platforms[indexToDestroy]);
-                }
-            }
+            
 
         }
         
     }
+
+    
+
+
 }
