@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 367229093}
   - component: {fileID: 367229095}
   - component: {fileID: 367229096}
+  - component: {fileID: 367229097}
   m_Layer: 0
   m_Name: Bread
   m_TagString: Untagged
@@ -342,7 +343,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.08522773}
+  m_Offset: {x: -0.39867878, y: 0.08522773}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -353,8 +354,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2.8295445}
+  m_Size: {x: 3.2026424, y: 2.8295445}
   m_EdgeRadius: 0
+--- !u!114 &367229097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367229092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabd081cfb278bd44b8d60bcbad5274e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 367229095}
 --- !u!1 &852975062
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f5669db20a2d146b84897f32d7df3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1.5
 --- !u!4 &1152998387
 Transform:
   m_ObjectHideFlags: 0
@@ -2351,6 +2365,14 @@ PrefabInstance:
     - target: {fileID: 3278746393631255366, guid: b8908ec76c890dc48b7887c86b8ec8ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278746393631255366, guid: b8908ec76c890dc48b7887c86b8ec8ba, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278746394071343191, guid: b8908ec76c890dc48b7887c86b8ec8ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8908ec76c890dc48b7887c86b8ec8ba, type: 3}
