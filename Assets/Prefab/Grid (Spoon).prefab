@@ -954,10 +954,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4802978138656371924}
   - component: {fileID: 4802978138656377642}
-  - component: {fileID: 4802978138656377643}
+  - component: {fileID: 6450859751233896049}
   m_Layer: 0
   m_Name: Spoon Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,8 +1029,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4802978138656377643
-BoxCollider2D:
+--- !u!58 &6450859751233896049
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1042,16 +1042,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.2678976}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.16, y: 3.84}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.019174576, y: 0.34035397}
   serializedVersion: 2
-  m_Size: {x: 2.16, y: 3.304205}
-  m_EdgeRadius: 0
+  m_Radius: 0.70719147

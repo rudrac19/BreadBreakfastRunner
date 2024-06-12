@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 12948612606313851}
   m_Layer: 0
   m_Name: Hand Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

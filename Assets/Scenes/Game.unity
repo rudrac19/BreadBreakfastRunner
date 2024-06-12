@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 367229095}
   - component: {fileID: 367229096}
   - component: {fileID: 367229097}
+  - component: {fileID: 367229098}
   m_Layer: 0
   m_Name: Bread
   m_TagString: Untagged
@@ -304,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367229092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -0.7, z: 0}
+  m_LocalPosition: {x: -5, y: -0.708, z: 0}
   m_LocalScale: {x: 0.6666667, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -341,7 +342,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.39867878, y: 0.08522773}
@@ -370,6 +371,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 367229095}
+--- !u!114 &367229098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367229092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a080b029f531edc42bb685ba28cf59ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &479775469
 PrefabInstance:
   m_ObjectHideFlags: 0
