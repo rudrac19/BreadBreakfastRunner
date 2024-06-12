@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Movements : MonoBehaviour
@@ -13,18 +15,20 @@ public class Movements : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            animator.SetBool("IsRunning", false);
             animator.SetTrigger("Jump");
-            animator.SetBool("IsRunning", false);
         }
-        else if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X))
         {
+            animator.SetBool("IsRunning", false);
             animator.SetTrigger("Duck");
-            animator.SetBool("IsRunning", false);
         }
-        else
-        {
-            animator.SetBool("IsRunning", true);
-        }
-
     }
+
+    public void OnComplete()
+    {
+        animator.SetBool("IsRunning", true);
+    }
+
+
 }
