@@ -13,15 +13,22 @@ public class Movements : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             animator.SetBool("IsRunning", false);
             animator.SetTrigger("Jump");
         }
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             animator.SetBool("IsRunning", false);
             animator.SetTrigger("Duck");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            animator.SetBool("IsRunning", false);
+            animator.SetTrigger("Power");
         }
     }
 

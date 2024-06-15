@@ -3,12 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollisionHandler : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        Debug.Log("OnTriggerEnter2D called with " + other.gameObject.name);
+        if (other.gameObject.CompareTag("Enemy"))
         {
+            Debug.Log("Collision with Enemy detected");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
+
 
