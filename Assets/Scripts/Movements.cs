@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movements : MonoBehaviour
 {
     public Animator animator;
+    public bool powered = false;
 
     void Start()
     {
@@ -29,12 +30,14 @@ public class Movements : MonoBehaviour
         {
             animator.SetBool("IsRunning", false);
             animator.SetTrigger("Power");
+            powered = true;
         }
     }
 
     public void OnComplete()
     {
         animator.SetBool("IsRunning", true);
+        powered = false;
     }
 
 

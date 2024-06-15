@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 367229096}
   - component: {fileID: 367229097}
   - component: {fileID: 367229098}
+  - component: {fileID: 367229100}
   m_Layer: 0
   m_Name: Bread
   m_TagString: Untagged
@@ -350,7 +351,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7, y: 3}
+    oldSize: {x: 4, y: 3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 367229095}
+  powered: 0
 --- !u!114 &367229098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +407,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &367229100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367229092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75414882db4dabe44a5aab90da60e2de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movements: {fileID: 367229097}
 --- !u!1001 &479775469
 PrefabInstance:
   m_ObjectHideFlags: 0
