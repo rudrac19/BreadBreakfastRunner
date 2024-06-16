@@ -32,4 +32,4 @@ Please do not sell this product for any price without attribution.**
 #
 **unless permitted by me, Rudra Pratap Chauhan (rcpython2@gmail.com).
 
-![Bread](https://github.com/rudrac19/BreadBreakfastRunner/assets/97199437/d693fbdc-a047-44f2-8793-7f27172f09c8)
+
