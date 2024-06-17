@@ -33,6 +33,25 @@ public class Movements : MonoBehaviour
             powered = true;
         }
     }
+    
+    public void Jump()
+    {
+        animator.SetBool("IsRunning", false);
+        animator.SetTrigger("Jump");
+    }
+
+    public void Duck()
+    {
+        animator.SetBool("IsRunning", false);
+        animator.SetTrigger("Duck");
+    }
+
+    public void Power()
+    {
+        animator.SetBool("IsRunning", false);
+        animator.SetTrigger("Power");
+        powered = true;
+    }
 
     public void OnComplete()
     {
